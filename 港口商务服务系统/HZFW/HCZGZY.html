@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>港口商务服务系统</title>
+    <link type="text/css" rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="HWDCXX.htmll">货物堆存信息</a>
+            <a class="navbar-brand" href="HWJJQD.html">货物交接清单</a>
+            <a class="navbar-brand" href="FFQF.html">付费欠费查询</a>
+            <a class="navbar-brand" href="HCZGZY.html">火车在港作业动态</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group ">
+                    <input type="text" class="form-control " placeholder="商务、货运、作业规则查询...">
+                </div>
+                <button type="submit" class="btn btn-success">查询</button>
+            </form>
+        </div>
+    </div>
+</nav>
+</br>
+</br>
+</br>
+<div  class="container" align="center" >
+    <div class="row">
+        <table id="train_dynamic" class="table table-hover" style="border: 1px solid black;">
+            <div class="log-txt">火车在港作业动态查询
+                <input id="log-cacct" type="text" autocomplete="off" maxlength="30" class="log-input input2" placeholder="请输入车次号" />
+                <button id="query" type="submit" class="btn btn-success" >查询</button>
+            </div>
+        </table>
+    </div>
+    
+    <div class="row" style="margin-top: 20px;">
+        <table id="train_work" class="table table-hover" style="border: 1px solid black;">
+
+        </table>
+    </div>
+</div>
+
+</body>
+
+<script type="text/javascript" src="../js/net.js" ></script>
+<script type="text/javascript" src="../js/jquery.min.js" ></script>
+<script>
+    $('#query').on('click', function () {
+		getTrainWorkDynamic($('#log-cacct').val());
+	})
+</script>
+</html>

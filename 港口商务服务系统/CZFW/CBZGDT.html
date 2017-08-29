@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>船舶在港动态查询</title>
+    <link type="text/css" rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="CBZGDT.html">船舶在港动态</a>
+            <a class="navbar-brand" href="CBZGZYDT.html">船舶在港作业</a>
+            <a class="navbar-brand" href="CBZLTJ.html">船舶资料提交</a>
+            <a class="navbar-brand" href="HCZGZY.html">火车在港作业动态</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group ">
+                    <input type="text" class="form-control " placeholder="商务、货运、作业规则查询...">
+                </div>
+                <button type="submit" class="btn btn-success">查询</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="container" align="center"><!--这个表没有-->
+    <br/>
+    <br/>
+    <div class="log-txt">船舶在港动态
+        <input id="log-cacct" type="text" autocomplete="off" maxlength="30" class="log-input input2" placeholder="请输入船舶编号" />
+        <button id="query" type="submit" class="btn btn-success" >查询</button>
+    </div>
+    
+    <div class="row" style="margin-top: 20px;">
+        <table id="ship_dynamic" class="table table-hover" style="border: 1px solid black;">
+
+        </table>
+    </div>
+</div>
+</div>
+<!--这里应该有搜索以后的显示。。。可是我不会-->
+<script type="text/javascript" src="../js/net.js" ></script>
+<script type="text/javascript" src="../js/jquery.min.js" ></script>
+<script>
+	$('#query').on('click', function () {
+		getShipDynamic($('#log-cacct').val());
+	})
+
+</script>
+</body>
+</html>

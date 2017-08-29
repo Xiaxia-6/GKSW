@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="../bootstrap.min.css">
+    <script src="../bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="CZ_login.html">船主登录</a>
+            <a class="navbar-brand" href="HZ_login.html">货主登录</a>
+            <a class="navbar-brand" href="Administrator_login.html">管理员登录</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group ">
+                    <input type="text" class="form-control " placeholder="商务、货运、作业规则查询...">
+                </div>
+                <button type="submit" class="btn btn-success">查询</button>
+                <button onclick="window.open('Register.html')" type="submit" class="btn btn-success" >注册</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="jumbotron">
+    <div class="container">
+        <h3>您好！欢迎使用港口商务服务系统，请注册</h3>
+    </div>
+</div>
+<div class="container" align="center">
+    <br/>
+    <br/>
+    <div class="log-txt text-right">
+        <div class="col-md-4">
+            <div class="log-txt">用户名
+            <input id="log-cacct" type="text" autocomplete="off" maxlength="30" class="log-input input2" placeholder="请输入用户名" />
+            </div>
+            <br/>
+            <div id="passwordLabel" class="log-txt">密&nbsp; &nbsp; 码
+                <input id="log-pwd" type="password" autocomplete="new-password" maxlength="20" class="log-input input2" placeholder="请输入密码" />
+            </div>
+            <p><div>客户代码&nbsp;&nbsp;
+            <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox1" value="01"> 01-船主
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox2" value="01"> 02-货主
+            </label>
+        </div></p>
+            <p>客户类别<input  type="text" autocomplete="off" maxlength="30" class="log-input input3" placeholder="客户类别" /></p>
+            <p>客户全称<input  type="text" autocomplete="off" maxlength="30" class="log-input input4" placeholder="客户全称" /></p>
+            <p>客户简称<input  type="text" autocomplete="off" maxlength="30" class="log-input input5" placeholder="客户简称" /></p>
+            <p>客户描述<input  type="text" autocomplete="off" maxlength="30" class="log-input input6" placeholder="客户描述" /></p>
+            <p>手机号码<input  type="tel" autocomplete="off" length="11" class="log-input input7" placeholder="手机号码" /></p>
+            <p>办公电话<input  type="tel" autocomplete="off" maxlength="12" class="log-input input8" placeholder="办公电话" /></p>
+        </div>
+        <div class="col-md-6">
+            <p>联系人名称<input  type="text" autocomplete="off" maxlength="30" class="log-input input9" placeholder="联系人名称" /></p>
+            <p>电子邮箱<input  type="email" autocomplete="off" maxlength="30" class="log-input input10" placeholder="电子邮箱" /></p>
+            <p>通信地址<input  type="text" autocomplete="off" maxlength="30" class="log-input input11" placeholder="通信地址" /></p>
+            <p>邮编<input  type="text" autocomplete="off" length="6" class="log-input input12" placeholder="邮编" /></p>
+            <p>纳税人识别号<input  type="text" autocomplete="off" maxlength="30" class="log-input input13" placeholder="纳税人识别号" /></p>
+            <p>开户行<input  type="text" autocomplete="off" maxlength="30" class="log-input input14" placeholder="开户行" /></p>
+            <p>开户行账号<input  type="number" autocomplete="off" maxlength="30" class="log-input input15" placeholder="开户行账号" /></p>
+            <p>单位类型<input  type="text" autocomplete="off" maxlength="30" class="log-input input16" placeholder="单位类型" /></p>
+        </div>
+    </div>
+</div>
+<button type="submit" class="btn btn-success center-block" >提交给管理员审核</button>
+</body>
+</html>
